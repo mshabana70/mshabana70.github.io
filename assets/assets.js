@@ -403,27 +403,3 @@ export const socialLinks = [
     { name: "Twitter", url: "https://twitter.com/_MoMatters", icon: "twitter" },
     { name: "Email", url: "mailto:mshabana@andrew.cmu.edu", icon: "mail" }
 ];
-
-// Legacy exports for compatibility
-export const workData = projectsData.filter(p => p.featured).slice(0, 4).map(p => ({
-    title: p.title,
-    description: p.category,
-    bgImage: '/work-1.png',
-}));
-
-export const serviceData = researchInterests.map(r => ({
-    icon: assets.code_icon,
-    title: r.title,
-    description: r.description,
-    link: ''
-}));
-
-export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'Python, C/C++, JavaScript, SQL' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'M.S. Cybersecurity (NYU), M.S. Software Engineering (Monmouth)' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Research', description: 'Principal Investigator at CMU SEI' }
-];
-
-export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
-];
